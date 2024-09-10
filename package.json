@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "ldrv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "hamjest": "^4.1.0"
+  }
+}
