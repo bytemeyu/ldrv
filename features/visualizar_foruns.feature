@@ -7,7 +7,7 @@ Scenario: Visitante acessa um fórum aberto
 
 Scenario: Visitante tenta acessar um fórum fechado
     Given que eu sou um visitante do site
-    When eu tento acessar um fórum restrito
+    When eu acesso um fórum restrito
     Then eu devo ser redirecionado para a página de login
 
 Scenario: Usuário autenticado acessa um fórum fechado
