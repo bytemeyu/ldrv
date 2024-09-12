@@ -1,16 +1,21 @@
 Feature: Visualizar fóruns
 
-Scenario: Visitante acessa um fórum aberto
-    Given que eu sou um visitante do site
-    When eu acesso um fórum público
-    Then eu devo visualizar o conteúdo do fórum
+Scenario: Um visitante acessa um fórum público
+    Given que um visitante está no site
+    When ele acessa um fórum público
+    Then ele deve visualizar o conteúdo do fórum
 
-Scenario: Visitante tenta acessar um fórum fechado
-    Given que eu sou um visitante do site
-    When eu acesso um fórum restrito
-    Then eu devo ser redirecionado para a página de login
+Scenario: Um visitante tenta acessar um fórum restrito
+    Given que um visitante está no site
+    When ele acessa um fórum restrito
+    Then ele deve ser redirecionado para a página de login
 
-Scenario: Usuário autenticado acessa um fórum fechado
-    Given que eu estou autenticado no site
-    When eu acesso um fórum restrito
-    Then eu devo visualizar o conteúdo do fórum
+Scenario: Um usuário autenticado acessa um fórum restrito
+    Given que um usuário autenticado está no site
+    When ele acessa um fórum restrito
+    Then ele deve visualizar o conteúdo do fórum
+
+Scenario: Um usuário autenticado acessa um fórum público
+    Given que um usuário autenticado está no site
+    When ele acessa um fórum público
+    Then ele deve visualizar o conteúdo do fórum
